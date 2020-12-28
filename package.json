@@ -1,0 +1,31 @@
+{
+  "name": "odin-todo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bobagit/odin-todo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bobagit/odin-todo/issues"
+  },
+  "homepage": "https://github.com/bobagit/odin-todo#readme",
+  "devDependencies": {
+    "css-loader": "^5.0.1",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "style-loader": "^2.0.0",
+    "webpack": "^5.11.0",
+    "webpack-cli": "^4.3.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
