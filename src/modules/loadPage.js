@@ -8,6 +8,11 @@ const loadHeader = function() { // header, logo, add section
   const header = document.createElement('header')
   header.textContent = "Things"
   wrap.appendChild(header)
+
+  const addButton = document.createElement('addTodo')
+  addButton.setAttribute('id', 'add-btn')
+  addButton.textContent = '+'
+  header.appendChild(addButton)
 }
 
 const loadMainWrap = function() { // wrap for sidebar and todo content
@@ -16,28 +21,10 @@ const loadMainWrap = function() { // wrap for sidebar and todo content
   wrap.appendChild(mainWrap)
 }
 
-const loadSidebar = function() {
-  const sidebar = document.createElement('div')
-  sidebar.setAttribute('id', 'sidebar')
-  let h2 = document.createElement('h2')
-  let text = document.createTextNode('Projects')
-  h2.appendChild(text)
-  sidebar.appendChild(h2)
-  let main = document.getElementById('main')
-  main.appendChild(sidebar)
-}
-
-const loadTodoSection = function() {
-  const todo = document.createElement('div')
-  todo.setAttribute('id', 'todo')
-  let main = document.getElementById('main')
-  main.appendChild(todo)
-}
-
 const loadFooter = function() {
   const footer = document.createElement('div')
   footer.setAttribute('id', 'footer')
   wrap.appendChild(footer)
 }
 
-export { loadWrap, loadHeader, loadMainWrap, loadSidebar, loadTodoSection, loadFooter }
+export { loadWrap, loadHeader, loadMainWrap, loadFooter }
